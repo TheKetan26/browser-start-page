@@ -1,0 +1,47 @@
+.search-section {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: end center;
+}
+
+
+.search-bar {
+    width: 40%;
+    height: 30px;
+    display: flex;
+}
+
+.search-bar-input {
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 5px 12px;
+    width: 90%;
+    border: none;
+} :focus {
+    outline: none;
+}
+
+.search-bar-button {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 10%;
+    cursor: pointer;
+    animation: search-bar-button 6s linear 2s infinite;
+}
+
+@keyframes search-bar-button {
+    0% {
+        background-color: #ea8b24;
+    }
+    33% {
+        background-color: #89c893;
+    }
+    66% {
+        background-color: #a1d9ef;
+    }
+    100% {
+        background-color: #ea8b24;
+    }
+}
