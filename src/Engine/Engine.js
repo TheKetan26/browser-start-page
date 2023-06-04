@@ -16,7 +16,6 @@ export default function Engine(props) {
                 <option value = 'image' className = 'engine-select-option'>Image</option>
                 <option value = 'video' className = 'engine-select-option'>Video</option>
                 <option value = 'doc' className = 'engine-select-option'>Document</option>
-                <option value = 'other' className = 'engine-select-option'>Other</option>
             </select>
         </section>
     )
