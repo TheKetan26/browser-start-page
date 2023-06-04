@@ -6,10 +6,13 @@
     height: 100vh;
     overflow: hidden;
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    background-color: #4b4b4b;
 }
 
 .bg video {
     width: 100vw;
     min-width: 1200px;
-    height: auto;
+    height: 100vh;
 }
