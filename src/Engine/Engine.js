@@ -5,10 +5,10 @@ export default function Engine(props) {
     return (
         <section className = 'engine'>
             <select className = 'engine-select'>
-                <option value = 'Google' className = 'engine-select-option'>Google</option>
-                <option value = 'Google' className = 'engine-select-option'>Yahoo!</option>
-                <option value = 'Google' className = 'engine-select-option'>DuckDuckGo</option>
-                <option value = 'Google' className = 'engine-select-option'>Bing</option>
+                <option value = 'google' className = 'engine-select-option'>Google</option>
+                <option value = 'yahoo' className = 'engine-select-option'>Yahoo!</option>
+                <option value = 'ddg' className = 'engine-select-option'>DuckDuckGo</option>
+                <option value = 'bing' className = 'engine-select-option'>Bing</option>
             </select>
             <select className = 'engine-select'>
                 <option value = 'all' className = 'engine-select-option'>All</option>
