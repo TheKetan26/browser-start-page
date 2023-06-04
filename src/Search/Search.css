@@ -29,6 +29,7 @@
     height: 100%;
     width: 10%;
     cursor: pointer;
+    background-color: #ea8b24;
     animation: search-bar-button 6s linear 2s infinite;
 }
 
