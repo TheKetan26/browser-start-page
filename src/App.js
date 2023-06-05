@@ -2,6 +2,27 @@ import Background from './Background';
 import Search from './Search/Search';
 import './App.css';
 import Engine from './Engine/Engine';
+import Bookmark from './Bookmark/Bookmark';
+
+
+var bookmarks = [
+    {
+        label: 'Github',
+        url: 'github.com'
+    },
+    {
+        label: 'CodeChef',
+        url: 'codechef.com'
+    },
+    {
+        label: 'Linedin',
+        url: 'Linkedin.in'
+    },
+    {
+        label: 'Hackerrank',
+        url: 'hackerranck.com'
+    }
+]
 
 
 export default function App() {
@@ -10,6 +31,7 @@ export default function App() {
             <Background />
             <Search />
             <Engine />
+            <Bookmark bookmarks = { bookmarks } />
         </section>
     );
 };

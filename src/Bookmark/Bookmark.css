@@ -1,0 +1,59 @@
+.bookmark-container {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bookmark {
+    position: absolute;
+    top: 70vh;
+    margin-left: 10vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmark-item {
+    margin-bottom: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.bookmark-item:hover .label {
+    animation: bookmark-item-label 3s linear infinite;
+}
+
+
+.img {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #89c893;
+}
+
+
+@keyframes bookmark-item-label {
+    0% {
+        color: #89c893;
+    }
+    33% {
+        color: #a1a1a1;
+    }
+    66% {
+        color: #ea8b24;
+    }
+    100% {
+        color: #89c893;
+    }
+}
