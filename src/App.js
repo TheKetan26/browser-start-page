@@ -3,6 +3,7 @@ import Search from './Search/Search';
 import './App.css';
 import Engine from './Engine/Engine';
 import Bookmark from './Bookmark/Bookmark';
+import Accounts from './Accounts/Accounts';
 
 
 var bookmarks = [
@@ -32,6 +33,7 @@ export default function App() {
             <Search />
             <Engine />
             <Bookmark bookmarks = { bookmarks } />
+            <Accounts />
         </section>
     );
 };
