@@ -26,6 +26,54 @@ var bookmarks = [
 ]
 
 
+var apps = [
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+    {
+        name: 'doc',
+        url: '',
+    },
+]
+
+
 export default function App() {
     return (
         <section>
@@ -33,7 +81,7 @@ export default function App() {
             <Search />
             <Engine />
             <Bookmark bookmarks = { bookmarks } />
-            <Accounts />
+            <Accounts apps = { apps } />
         </section>
     );
 };

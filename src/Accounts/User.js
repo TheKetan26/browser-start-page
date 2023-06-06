@@ -26,9 +26,12 @@ function Dropdown(props) {
         )
     })
 
-    var className = 'dropdown'
+    var className = ''
     if (!props.display) {
-        className = className.concat(' dropdown-no')
+        className = 'dropdown no-display'
+    }
+    else {
+        className = 'dropdown'
     }
 
     return (
@@ -45,7 +48,7 @@ export default function User(props) {
             <div className = 'user'>
                 <div className = 'user-inner'>K</div>
             </div>
-            <Dropdown display = { true } users = { users } />
+            <Dropdown display = { false } users = { users } />
         </section>
     )
 }
