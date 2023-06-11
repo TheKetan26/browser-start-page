@@ -6,8 +6,8 @@ import Apps from './Apps'
 export default function Accounts(props) {
     return (
         <section>
-            <User />
-            <Apps apps = { props.apps } />
+            {/* <User /> */}
+            <Apps />
         </section>
     )
 }

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Background from './Background';
 import Search from './Search/Search';
 import './App.css';
@@ -7,86 +6,27 @@ import Bookmark from './Bookmark/Bookmark';
 import Accounts from './Accounts/Accounts';
 
 
-var bookmarks
+var bookmarks, users
 
 
 function getUsers(event) {
     event.preventDefault();
-    const users = localStorage.getItem('users');
-    if (users === null)
-        console.log('User not found.');
+    const data = localStorage.getItem('users');
+    if (data === null)
+        users = []
     else
-        console.log(users);
+        users = data
 }
-
-
-function getBookmarks() {
-    const data = localStorage.getItem('bookmarks');
-    if (data === null) 
-        bookmarks = []
-    else 
-        bookmarks = data
-}
-
-
-var apps = [
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-    {
-        name: 'doc',
-        url: '',
-    },
-]
 
 
 export default function App() {
-    getBookmarks();
-
     return (
         <section>
             <Background />
             <Search />
             <Engine />
-            <Bookmark bookmarks = { bookmarks } />
-            <Accounts apps = { apps } />
+            <Bookmark />
+            <Accounts />
         </section>
     );
 };

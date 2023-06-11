@@ -1,19 +1,33 @@
+import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import './Bookmark.css'
 
 
-export default function Bookmark(props) {
-    var bookmarkElements = props.bookmarks.map(bookmark => {
+const getBookmark = () => {
+    const storedData = localStorage.getItem('BookmarkData');
+    if (storedData) {
+        return JSON.parse(storedData);
+    }
+    return [];
+};
+  
+
+
+export default function Bookmark() {
+    var bookmarks = getBookmark()
+
+    var bookmarkElements = bookmarks.map(bookmark => {
+                                let imgUrl = `https:/${bookmark.url}/favicon.ico`
                                 return (
                                     <Col className = 'd-flex justify-content-center'>
-                                        <span className = 'bookmark-item'>
-                                            <div className = 'img'/>
+                                        <Link to = {`https:/${bookmark.url}`} className = 'bookmark-item'>
+                                            <img className = 'img' src = {imgUrl} />
                                             <div className = 'label'>
-                                                { bookmark.label }
+                                                { bookmark.name }
                                             </div>
-                                        </span>
+                                        </Link>
                                     </Col>
                                 )
                             })

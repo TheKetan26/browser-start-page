@@ -1,5 +1,17 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './Accounts.css'
 import { RiAppsFill } from 'react-icons/ri'
+
+
+const getApps = () => {
+    const storedData = localStorage.getItem('AppData');
+    if (storedData) {
+        return JSON.parse(storedData);
+    }
+    return [];
+};
 
 
 function Drawer(props) {
@@ -11,30 +23,15 @@ function Drawer(props) {
         className = 'drawer'
     }
 
-    var cnt = 1
     var appElements = [], rowAppElement = []
-    props.apps.map(app => {
-        rowAppElement.push(
-            <div className = 'app-img' />
-        )
-        if (cnt === 5) {
-            appElements.push(
-                <div className = 'app-drawer-row'>
-                    { rowAppElement }
-                </div>
-            )
-            rowAppElement = []
-            cnt = 1
-        }
-        else
-            cnt += 1
-    })
-    if (cnt > 1) 
+    props.apps.map(async app => {
+        let url = `https://${app.url}`
         appElements.push(
-            <div className = 'app-drawer-row'>
-                { rowAppElement }
-            </div>
+            <Link to = { url } className = 'app-drawer-row'>
+                { app.name }
+            </Link>
         )
+    })
 
     return (
         <section className = { className }>
@@ -45,12 +42,21 @@ function Drawer(props) {
 
 
 export default function Apps(props) {
+    const [displayDrawer, setDisplayDrawer] = useState(false)
+    const [apps, setApps] = useState(getApps())
+
+
+    const handleDrawer = () => {
+        setDisplayDrawer(!displayDrawer)
+    }
+
+
     return (
         <section>
-            <div className = 'apps'>
+            <div className = 'apps' onClick = { handleDrawer } >
                 <RiAppsFill size = { 24 } className = 'apps-icon' />
             </div>
-            <Drawer display = { false } apps = { props.apps } />
+            <Drawer display = { displayDrawer } apps = { apps } />
         </section>
     )
 }

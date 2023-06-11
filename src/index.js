@@ -8,6 +8,7 @@ import App from './App';
 import Admin from './Admin/Admin';
 import UserData from './Admin/UserData';
 import BookmarkData from './Admin/Bookmar';
+import AppData from './Admin/AppData';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,8 +17,9 @@ root.render(
         <Routes>
             <Route path = '/' element = { <App /> } />
             <Route path = '/admin' element = { <Admin /> } />
-            <Route path = 'admin/user' element = { <UserData /> } />
-            <Route path = 'admin/bookmark' element = { <BookmarkData /> } />
+            <Route path = '/admin/user' element = { <UserData /> } />
+            <Route path = '/admin/bookmark' element = { <BookmarkData /> } />
+            <Route path = '/admin/app' element = { <AppData /> } />
         </Routes>
     </Router>
 );
