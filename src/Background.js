@@ -1,5 +1,4 @@
 import './Background.css'
-import ReactPlayer from 'react-player'
 // import bg from 'https://drive.google.com/uc?id=1Gz0AZP2OqF87T7W2l74YoIvea3BSiv8e'
 
 
