@@ -19,11 +19,17 @@ export default function Bookmark() {
     var bookmarks = getBookmark()
 
     var bookmarkElements = bookmarks.map(bookmark => {
-                                let imgUrl = `https:/${bookmark.url}/favicon.ico`
+                                let altImgUrl = `https://s2.googleusercontent.com/s2/favicons?domain=www.${ bookmark.url }&sz=128`
+                                let imgUrl = `https://${bookmark.url}/favicon.ico`
                                 return (
                                     <Col className = 'd-flex justify-content-center'>
-                                        <Link to = {`https:/${bookmark.url}`} className = 'bookmark-item'>
-                                            <img className = 'img' src = {imgUrl} />
+                                        <Link to = {`https://${bookmark.url}`} className = 'bookmark-item'>
+                                            <img className = 'img' src = {imgUrl} onError = { 
+                                                ({currentTarget}) => {
+                                                    currentTarget.onerror = null
+                                                    currentTarget.src = altImgUrl
+                                                }
+                                            } alt = { altImgUrl } />
                                             <div className = 'label'>
                                                 { bookmark.name }
                                             </div>
