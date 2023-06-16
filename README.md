@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Search image, video, document, application or anything, or even search on Google, Yahoo!, Bing or Duck Duck Go, your choise it. A page like the one you see everytime you open your browser, just looks better and give more options.
 
-## Available Scripts
+## How it works?
 
-In the project directory, you can run:
+No need to for any unnecessary work, open the site type the query, select the search engine and file type or maybe not, its optional, and go explore the wast world of web.
 
-### `npm start`
+### Direct Site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Site is hosted on github pages. Anyone can use it on the url https://theketan26.github.io/Browser-react-page/#
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React app
 
-### `npm test`
+Anyone can access the react app also, just follow the following steps, 
+1. Open the terminal, 
+2. Run the command "git clone https://github.com/theketan26/Browser-start-page.git"
+3. Run the command "cd Browser-start-page"
+4. Run the command "npm init"
+5. Run the command "npm install react react-router-dom react bootstrap react-bootstrap axios react-icons"
+6. Run the command "npm start"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If everything work out correctly, the server will start on port 3000. 
+You can access the server by opening the url in any browser.
+URl: localhost:3000
 
-### `npm run build`
+## Make it personal permanent
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can make the page default start page and every time you start browser the page appear, just follow the steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For Firfox:
+1. Open the browser,
+2. Go to setting,
+3. Search new window and tab,
+4. Change the Custom url to "https://theketan26.github.io/Browser-react-page/#"
+5. To change the for new tabs you'll need to add addon, I suggest "New tab override"
