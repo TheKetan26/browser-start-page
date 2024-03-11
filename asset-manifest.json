@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.194f11c0.css",
-    "main.js": "/static/js/main.c66a6daa.js",
+    "main.js": "/static/js/main.d582f1ce.js",
     "static/media/bg_pokemon.mp4": "/static/media/bg_pokemon.75af8dda64dcb25e468e.mp4",
     "index.html": "/index.html",
     "main.194f11c0.css.map": "/static/css/main.194f11c0.css.map",
-    "main.c66a6daa.js.map": "/static/js/main.c66a6daa.js.map"
+    "main.d582f1ce.js.map": "/static/js/main.d582f1ce.js.map"
   },
   "entrypoints": [
     "static/css/main.194f11c0.css",
-    "static/js/main.c66a6daa.js"
+    "static/js/main.d582f1ce.js"
   ]
 }
