@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Browser-start-page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Browser start page is a landing page to start exploring web. Clean, simple, and minimilist (tried to be funny too) design on Pokemons.
 
-## Available Scripts
+## Why use Browser-start-page as start exploring page?
 
-In the project directory, you can run:
+Very minimilist design makes easy to use with features like,
+Explore on multiple search engines i.e. Google, Yahoo, DuckDuckGo and Bing
+Specific file formate search i.e. Application, Image, Video and Document **Only work in Google search engine**
+Add custom bookmarks
 
+## How can you use Browser-start-page?
+
+Click on the link or copy the link, [https://browser-start-page-self.vercel.app/](https://browser-start-page-self.vercel.app/) to view it in your browser.
+
+You can change search engine by selecting search engine from select options, Google is set by default.
+You can change select specific file formate using select options, All is set by default. **Only work in Google search engine**
+
+Type text in input field and press enter or click on search button. (Obviously)
+
+## Can you run Browser-start-page on local system?
+
+Yes, the project is open source, so, clone the application and create youself custom designs. Just follow the steps,
+
+### Open preferred command shell and run following commands
+### `git clone https://github.com/theketan26/Browser-start-page`
+### `npm install`
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
